@@ -1,0 +1,16 @@
+$white: #ffffff;
+$gray: #d2d2d2;
+$black: #333333;
+$sand: #999999;
+$btn_color: #38aef0;
+
+@mixin space_between {
+        display: flex;
+        justify-content: space-between;
+}
+
+@mixin center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}

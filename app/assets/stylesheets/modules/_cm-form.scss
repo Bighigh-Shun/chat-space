@@ -1,0 +1,41 @@
+.chat-main-form {
+  background-color: $gray;
+  height: 90px;
+  padding: 0px 40px;
+  @include center;
+
+  .input-form {
+    background-color: $gray;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    position: relative;
+
+    .input-text {
+      width: 100%;
+      padding: 0px 40px 0px 10px;
+    }
+
+      .attached-file {
+        font-size: 25px;
+        position: absolute;
+        top: 6px;
+        right: 10px;
+
+      .image {
+        display: none;
+      }
+    }
+  }
+
+  .submit-btn {
+    background-color: $btn_color;
+    color: $white;
+    height: 50px;
+    width: 100px;
+    font-size: 100%;
+    margin-left: 15px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
