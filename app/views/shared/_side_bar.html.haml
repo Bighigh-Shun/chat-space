@@ -2,11 +2,11 @@
   .side-bar-header
     .header-contents
       .user-name
-        Shun
+        = current_user.name
       .side-bar-icon
         = link_to "#", class: "link" do
           = icon('fas', 'edit', class: 'icon')
-        = link_to "#" do
+        = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
   .groups
     .group-contents
