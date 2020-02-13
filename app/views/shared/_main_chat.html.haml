@@ -22,33 +22,19 @@
     .messages-box
       .post-contents
         .poster
-          Shun
+          = messages.user.name
         .post-date
-          2020/02/05(Wed) 23:35:34
+          = message.created_at.strftime("%Y年%m月%d日 %H時%M分")
       .messages
         勉強中です！
-    .messages-box
-      .post-contents
-        .poster
-          Osikawa
-        .post-date
-          2020/02/05(Wed) 23:44:52
-      .messages
-        こんばんは！
-    .messages-box
-      .post-contents
-        .poster
-          Watanabe
-        .post-date
-          2020/02/05(Wed) 23:48:13
-      .messages
-        みんな頑張ってくださいー
 
   .chat-main-form
     .input-form
-      %input.input-text{:type => "text", :placeholder => "type a message"}
-      %label.attached-file
-        = icon('far', 'image')
-        %input{type: "file", class: "image"}
-    %button.submit-btn{:type => "submit"}
-      Send
+      = form_for [@group, @message] do |f|
+        = f.text_field :body, class: "input-text", placeholder: "type a message"
+        .attached-file
+          = f.label :image do
+            = icon('fas', 'image')
+            = f.file_field :image, class: "image"
+        = f.submit "Send", class: "submit-btn"
+      

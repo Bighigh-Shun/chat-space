@@ -50,7 +50,7 @@ Things you may want to cover:
 - belongs_to :user
 
 
-## massegesテーブル
+## messagesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
