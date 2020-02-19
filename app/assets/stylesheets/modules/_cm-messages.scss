@@ -1,28 +1,36 @@
 .chat-main-messages {
   background-color: #fafafa;
+}
+
+.messages {
+  overflow: auto;
+  scroll-snap-type: y proximity;
   height: calc(100% - 190px);
+}
 
-  .messages-box {
-    padding: 35px 0px 46px 40px;
+.messages-box {
+  padding: 35px 0px 46px 40px;
+}
 
-    .post-contents {
-      margin-bottom: 12px;
-      display: flex;
+.post-contents {
+  margin-bottom: 12px;
+  display: flex;
+}
 
-      .poster {
-        color: $black;
-        font-size: 16px;
-        margin-right: 5px;
-      }
+.poster {
+  color: $black;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 5px;
+}
 
-      .post-date {
-        color: $sand;
-        font-size: 12px;
-      }
-    }
-  }
-  .messages {
-    color: #434a54;
-    font-size: 14px;
-  }
+.date {
+  color: $sand;
+  font-size: 12px;
+}
+
+
+.message-text {
+  color: #434a54;
+  font-size: 13px;
 }
