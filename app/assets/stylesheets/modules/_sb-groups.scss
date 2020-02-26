@@ -1,5 +1,7 @@
 .groups {
   background-color: #2f3e51;
+  overflow: auto;
+  scroll-snap-type: y proximity;
   height: calc(100% - 100px);
 }
 
