@@ -94,7 +94,6 @@ $(function(){
     })
 
     .done(function(messages) {
-      console.log("test");
       if (messages.length !== 0) {
         var insertHTML = '';
         $.each(messages, function(i, message){
@@ -109,6 +108,6 @@ $(function(){
     });
     };
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
-      setInterval(reloadMessages, 3500);
+      setInterval(reloadMessages, 7000);
     }
 });
