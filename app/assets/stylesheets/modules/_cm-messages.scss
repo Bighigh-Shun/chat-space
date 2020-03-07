@@ -1,8 +1,5 @@
-.chat-main-messages {
-  background-color: #fafafa;
-}
-
 .messages {
+  background-color: #fafafa;
   overflow: auto;
   scroll-snap-type: y proximity;
   height: calc(100% - 190px);
